@@ -30,6 +30,9 @@ set(IPTV_SOURCES src/client.cpp
                  src/PVRPlayList.cpp
                  src/libexecstream/exec-stream.cpp)
 
+set(IPTV_HEADERS src/client.h
+                 src/PVRIptvData.h)
+
 build_addon(pvr.iptvsimple IPTV DEPLIBS)
 
 include(CPack)
